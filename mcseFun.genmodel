@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/OpenMCSE modeling tool/src-gen" editDirectory="/OpenMCSE modeling tool.edit/src-gen"
+    editorDirectory="/OpenMCSE modeling tool.editor/src-gen" modelPluginID="OpenMCSE_modeling_tool"
+    modelName="McseFun" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/OpenMCSE modeling tool.tests/src-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>mcseFun.ecore</foreignModel>
+  <genPackages prefix="OpenMCSEmodelingFun" disposableProviderFactory="true" fileExtensions="mcseFun"
+      ecorePackage="mcseFun.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mcseFun.ecore#//typeCollect">
+      <genEnumLiterals ecoreEnumLiteral="mcseFun.ecore#//typeCollect/msg"/>
+      <genEnumLiterals ecoreEnumLiteral="mcseFun.ecore#//typeCollect/shv"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="mcseFun.ecore#//msgType"/>
+    <genDataTypes ecoreDataType="mcseFun.ecore#//shvType"/>
+    <genClasses ecoreClass="mcseFun.ecore#//ModelMCSE">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//ModelMCSE/relations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//ModelMCSE/Modstructure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//ModelMCSE/Moddevices"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//ModelMCSE/modelName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//ModelMCSE/Modconnection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//ModelMCSE/Moddatatype"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcseFun.ecore#//Relations">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Relations/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Relations/changedDirection"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcseFun.ecore#//Structure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Structure/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Structure/Strport"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcseFun.ecore#//Behavior">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Behavior/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Behavior/Appearance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Behavior/Attributes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Behavior/Documentation"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcseFun.ecore#//Device">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Device/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Device/Devport"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcseFun.ecore#//Templates">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Templates/templateName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Templates/templates"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//MessageQueue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//MessageQueue/type"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//SharedVariable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//SharedVariable/type"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//Event"/>
+    <genClasses ecoreClass="mcseFun.ecore#//MethodCallInterface"/>
+    <genClasses ecoreClass="mcseFun.ecore#//ClockGenerator"/>
+    <genClasses ecoreClass="mcseFun.ecore#//Divider"/>
+    <genClasses ecoreClass="mcseFun.ecore#//MessageRouting"/>
+    <genClasses ecoreClass="mcseFun.ecore#//SampledFunction"/>
+    <genClasses ecoreClass="mcseFun.ecore#//SystemCIP"/>
+    <genClasses ecoreClass="mcseFun.ecore#//InitialNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//InitialNode/isFirst"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Operation/Algorithm"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//Loop"/>
+    <genClasses ecoreClass="mcseFun.ecore#//InputAction"/>
+    <genClasses ecoreClass="mcseFun.ecore#//OutputAction"/>
+    <genClasses ecoreClass="mcseFun.ecore#//Alternative"/>
+    <genClasses ecoreClass="mcseFun.ecore#//MultipleWait"/>
+    <genClasses ecoreClass="mcseFun.ecore#//MultiInputSelector"/>
+    <genClasses ecoreClass="mcseFun.ecore#//MultiOutputSelector"/>
+    <genClasses ecoreClass="mcseFun.ecore#//DeviceProgrammersView"/>
+    <genClasses ecoreClass="mcseFun.ecore#//ConnectedInterface"/>
+    <genClasses ecoreClass="mcseFun.ecore#//ImplementedInterface"/>
+    <genClasses ecoreClass="mcseFun.ecore#//Producer"/>
+    <genClasses ecoreClass="mcseFun.ecore#//Consumer"/>
+    <genClasses ecoreClass="mcseFun.ecore#//ProcessingFunction"/>
+    <genClasses ecoreClass="mcseFun.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Port/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mcseFun.ecore#//FromTo">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcseFun.ecore#//FromTo/last"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcseFun.ecore#//FromTo/next"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Connection/Confrom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Connection/Conto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Connection/linkName"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//Function/isBehaviorFunction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Function/Funbehavior"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Function/subFunction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Function/Fundevices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mcseFun.ecore#//Function/Funrelations"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//DataType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//DataType/typeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//DataType/predefini"/>
+    </genClasses>
+    <genClasses ecoreClass="mcseFun.ecore#//VariableDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mcseFun.ecore#//VariableDeclaration/Initialization"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mcseFun.ecore#//VariableDeclaration/Vardatatype"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
